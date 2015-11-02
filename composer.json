@@ -1,0 +1,42 @@
+{
+    "name"              : "apps-libX/webapps",
+    "description"       : "Description webapps",
+    "keywords"          : [
+        "apps-libX",
+        "webapps"
+    ],
+    "homepage"          : "https://github.com/apps-libX/webapps",
+    "license"           : "MIT",
+    "authors"           : [
+        {
+            "name"     : "anonymoussc",
+            "email"    : "50c5ac69@opayq.com",
+            "homepage" : "http://anonymoussc.github.io/",
+            "role"     : "Developer"
+        }
+    ],
+    "require"           : {
+        "php"                  : ">=5.4.0",
+        "illuminate/support"   : "5.1.*",
+        "illuminate/contracts" : "5.1.*"
+    },
+    "require-dev"       : {
+        "phpunit/phpunit"    : "4.*",
+        "scrutinizer/ocular" : "~1.1"
+    },
+    "autoload"          : {
+        "classmap" : [
+            "src/seeds",
+            "src/controllers"
+        ],
+        "psr-4"    : {
+            "AppsLibX\\Webapps\\" : "src"
+        }
+    },
+    "autoload-dev"      : {
+        "psr-4" : {
+            "AppsLibX\\Webapps\\Test\\" : "tests"
+        }
+    },
+    "minimum-stability" : "stable"
+}
