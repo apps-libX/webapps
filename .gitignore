@@ -1,4 +1,13 @@
-build
-composer.lock
-docs
-vendor
+/workbench
+/vendor
+/node_modules
+.env
+/bower_components
+npm-debug.log
+.idea/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
